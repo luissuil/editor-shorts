@@ -1,0 +1,15 @@
+nombre: podcast
+descripcion: Clip de conversación entre dos o más personas. Ritmo medio, subtítulos protagonistas.
+cuando_usarlo: Fragmentos de entrevistas o podcasts con varias voces.
+
+duracion: {min: 20, max: 75}
+ritmo:
+  plano_objetivo: 3.5
+  plano_min: 1.0
+  plano_max: 8.0
+  silencio_max: 0.4
+
+subtitulos:
+  tamano: 80
+  palabras_por_linea: 3
+  posicion_y: 0.62

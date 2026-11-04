@@ -1,0 +1,17 @@
+nombre: producto
+descripcion: Promo de producto con música. Cortes rápidos al beat, poco texto.
+cuando_usarlo: Material visual de producto (b-roll), sin mucha voz, con música.
+
+duracion: {min: 10, max: 30}
+ritmo:
+  plano_objetivo: 1.0
+  plano_min: 0.4
+  plano_max: 2.5
+  cortes_al_beat: true
+
+subtitulos:
+  auto: false
+
+audio:
+  musica_db: -10
+  ducking: false

@@ -1,0 +1,18 @@
+nombre: talking-head
+descripcion: Una persona hablando a cámara. Cortes por frase, sin pausas, subtítulos grandes.
+cuando_usarlo: Material con una sola persona hablando de frente la mayor parte del tiempo.
+
+ritmo:
+  plano_objetivo: 2.2
+  plano_min: 0.8
+  plano_max: 5.0
+  silencio_max: 0.3
+
+encuadre:
+  zoom: 1.1
+  punch_in: true
+
+subtitulos:
+  tamano: 84
+  palabras_por_linea: 2
+  mayusculas: true

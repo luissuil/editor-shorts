@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./shorts:*)",
+      "Bash(python3 -m motor:*)",
+      "Bash(python3 -m pytest:*)",
+      "Bash(ls:*)",
+      "Read(.cache/**)",
+      "Edit(videos/*.timeline.json)",
+      "Write(videos/*.timeline.json)",
+      "Edit(.cache/**)",
+      "Write(.cache/**)"
+    ],
+    "deny": [
+      "Edit(videos/*.yaml)",
+      "Write(videos/*.yaml)",
+      "Edit(estilos/**)",
+      "Write(estilos/**)",
+      "Edit(material/**)",
+      "Write(material/**)",
+      "Bash(rm:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && python3 -m motor hook-validar"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+# Obligatorio
+pyyaml>=6.0
+
+# Opcionales (el sistema funciona sin ellos, con menos funciones)
+# scenedetect[opencv]   # cortes más precisos que el detector de ffmpeg
+# librosa               # beats de la música -> cortes al beat
+# faster-whisper        # transcripción con tiempos por palabra -> subtítulos automáticos
+# google-genai          # "ojos": Gemini Flash-Lite describe video + audio
+# pytest                # tests
+
+# Sistema: ffmpeg >= 6 con libass (brew install ffmpeg / apt install ffmpeg)

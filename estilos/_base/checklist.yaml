@@ -1,0 +1,15 @@
+# Checklist de calidad que aplica a TODO short, haya referencia o no.
+# Lo usa motor/qa.py.
+hook_segundos: 3              # tiene que haber título o clip "hook" antes de esto
+silencio_max: 1.0             # silencio máximo permitido en el render (s)
+loudness_tolerancia: 1.5      # ± LU alrededor del objetivo del estilo
+subtitulos_tamano_min: 56     # px a 1080x1920
+caracteres_por_linea_max: 24
+
+# Fracción de la pantalla que tapa la interfaz de cada app (botones, descripción, etc.).
+# Valores aproximados: ajústalos con capturas reales de cada app.
+plataformas: [tiktok, reels, shorts]
+zonas_seguras:
+  tiktok: {arriba: 0.10, abajo: 0.20, derecha: 0.15}
+  reels:  {arriba: 0.12, abajo: 0.22, derecha: 0.12}
+  shorts: {arriba: 0.10, abajo: 0.18, derecha: 0.12}

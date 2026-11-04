@@ -1,0 +1,25 @@
+id: 2026-11-04_acme_lanzamiento
+cliente: acme
+titulo: Lanzamiento
+estado: aprobado
+estilo: talking-head
+referencia: referencias/ref-acme.mp4
+brief: Cortes rápidos, subtítulos amarillos, sin música.
+ajustes:
+  subtitulos:
+    color: '#FFD400'
+material:
+- acme/crudos/entrevista-01.mp4
+- acme/crudos/producto-02.mp4
+version: 2
+historial:
+- v: 1
+  nota: primer corte
+  autor: sistema
+  fecha: 2026-11-04T07:34
+- v: 2
+  nota: agregar música de fondo baja para tapar los silencios del b-roll
+  autor: editor
+  fecha: 2026-11-04T07:35
+creado: '2026-11-04'
+nota_director: 'Una persona hablando a cámara + b-roll de producto: talking-head. Ritmo tomado de la referencia.'

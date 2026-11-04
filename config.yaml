@@ -1,0 +1,25 @@
+# Dónde vive el material crudo. Las rutas de `material:` en cada manifiesto son relativas a esto.
+# En producción apunta a un disco compartido o a un Drive montado, p. ej. /mnt/drive/clientes
+material_raiz: ./material
+
+# Renders aprobados (lo que se entrega)
+salidas: ./salidas
+
+# Caché regenerable (análisis, renders de prueba, QA). Se puede borrar entero.
+cache: ./.cache
+
+# Renders de prueba que se guardan por video (los más viejos se borran solos)
+renders_a_conservar: 2
+
+analisis:
+  umbral_escena: 0.3     # sensibilidad del detector de cortes de ffmpeg (0-1)
+  silencio_db: -35       # por debajo de esto se considera silencio
+  silencio_min: 0.4      # segundos mínimos para contar un silencio
+
+transcripcion:           # solo si faster-whisper está instalado
+  modelo: small          # tiny | base | small | medium | large-v3
+  idioma: es
+
+ojos:                    # modelo de visión que describe videos para Opus
+  proveedor: gemini
+  modelo: gemini-3.1-flash-lite   # verifica el id exacto en la doc de la API de Gemini

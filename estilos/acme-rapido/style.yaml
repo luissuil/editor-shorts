@@ -1,0 +1,51 @@
+nombre: acme-rapido
+descripcion: 'Creado desde 2026-11-04_acme_lanzamiento (capas: _base, talking-head, referencia:ref-acme.mp4,
+  ajustes)'
+cuando_usarlo: 'Videos de Acme: talking head + b-roll con cortes de ~1 s'
+formato:
+  ancho: 1080
+  alto: 1920
+  fps: 30
+duracion:
+  min: 16
+  max: 24
+plataformas:
+- tiktok
+- reels
+- shorts
+ritmo:
+  plano_objetivo: 1.0
+  plano_min: 0.7
+  plano_max: 1.5
+  cortes_al_beat: false
+  tolerancia_beat: 0.08
+  quitar_silencios: true
+  silencio_max: 0.3
+encuadre:
+  zoom: 1.1
+  punch_in: true
+subtitulos:
+  auto: true
+  fuente: Inter
+  tamano: 84
+  color: '#FFD400'
+  color_resaltado: '#FFD400'
+  color_borde: '#000000'
+  borde: 5
+  sombra: 0
+  mayusculas: true
+  palabras_por_linea: 2
+  posicion_y: 0.72
+titulo:
+  fuente: Inter
+  tamano: 84
+  color: '#FFFFFF'
+  fondo: '#000000CC'
+  mayusculas: true
+  posicion_y: 0.16
+audio:
+  loudness_lufs: -14
+  true_peak: -1.0
+  musica: null
+  musica_db: -20
+  ducking: true

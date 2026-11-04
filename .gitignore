@@ -1,0 +1,16 @@
+# Regenerable: análisis, renders de prueba, QA
+.cache/
+
+# Pesado: nunca en git. El manifiesto solo apunta a dónde está.
+material/
+salidas/*
+!salidas/.gitkeep
+*.mp4
+*.mov
+*.wav
+*.mp3
+
+__pycache__/
+.pytest_cache/
+.venv/
+.env

@@ -1,0 +1,19 @@
+nombre: tutorial
+descripcion: Explicación paso a paso con pantalla o producto. Planos más largos, títulos por paso.
+cuando_usarlo: Grabaciones de pantalla, demos de producto o recetas donde importa ver el detalle.
+
+duracion: {min: 30, max: 90}
+ritmo:
+  plano_objetivo: 4.0
+  plano_min: 1.5
+  plano_max: 9.0
+  silencio_max: 0.5
+
+subtitulos:
+  tamano: 68
+  palabras_por_linea: 4
+  posicion_y: 0.76
+
+titulo:
+  tamano: 72
+  posicion_y: 0.14

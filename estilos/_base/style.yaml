@@ -1,0 +1,48 @@
+# Preset base. TODOS los videos parten de aquí; los demás presets solo cambian lo que necesitan.
+nombre: base
+descripcion: Valores por defecto para cualquier short vertical.
+
+formato: {ancho: 1080, alto: 1920, fps: 30}
+duracion: {min: 15, max: 60}          # segundos
+plataformas: [tiktok, reels, shorts]   # define las zonas seguras que revisa el QA
+
+ritmo:
+  plano_objetivo: 2.5     # duración típica de un plano (s)
+  plano_min: 0.8
+  plano_max: 6.0
+  cortes_al_beat: false
+  tolerancia_beat: 0.08   # s
+  quitar_silencios: true  # el editor recorta pausas largas del material
+  silencio_max: 0.6       # pausa máxima que se deja dentro de un clip (s)
+
+encuadre:
+  zoom: 1.0               # 1.0 = recorte vertical justo; 1.15 = un poco más cerca
+  punch_in: false         # alternar zoom 1.0 / 1.15 entre planos del mismo clip
+
+subtitulos:
+  auto: true              # generar desde el transcript si no hay subtítulos manuales
+  fuente: Inter
+  tamano: 76
+  color: "#FFFFFF"
+  color_resaltado: "#FFD400"   # para *palabras* entre asteriscos
+  color_borde: "#000000"
+  borde: 5
+  sombra: 0
+  mayusculas: false
+  palabras_por_linea: 3
+  posicion_y: 0.72        # fracción del alto (0 = arriba, 1 = abajo)
+
+titulo:
+  fuente: Inter
+  tamano: 84
+  color: "#FFFFFF"
+  fondo: "#000000CC"
+  mayusculas: true
+  posicion_y: 0.16
+
+audio:
+  loudness_lufs: -14      # objetivo de TikTok/Reels/Shorts
+  true_peak: -1.0
+  musica: null            # ruta relativa a material_raiz, o null
+  musica_db: -20
+  ducking: true           # baja la música cuando hay voz
